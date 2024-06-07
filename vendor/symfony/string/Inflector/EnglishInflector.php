@@ -166,9 +166,6 @@ final class EnglishInflector implements InflectorInterface
         // Fourth entry: Whether the suffix may succeed a consonant
         // Fifth entry: plural suffix, normal
 
-        // axes (axis)
-        ['sixa', 4, false, false, 'axes'],
-
         // criterion (criteria)
         ['airetirc', 8, false, false, 'criterion'],
 
@@ -387,9 +384,6 @@ final class EnglishInflector implements InflectorInterface
 
         // traffic
         'ciffart',
-
-        // aircraft
-        'tfarcria',
     ];
 
     public function singularize(string $plural): array
