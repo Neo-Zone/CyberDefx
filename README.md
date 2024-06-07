@@ -1,66 +1,115 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# CyberDefX
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+CyberDefX is an advanced web application tool tailored for network architects, penetration testers, cybersecurity professionals, and more. Designed to assist in various areas including network security, data safety, forensics, and cryptography, CyberDefX is your comprehensive solution for navigating the complexities of cybersecurity.
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+![CyberDefX Screenshot](https://github.com/Neo-Zone/CyberDefx/blob/main/Screenshot%202024-06-07%20184005.png)
+## Installation
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Prerequisites
 
-## Learning Laravel
+Ensure you have the following software installed on your local development machine:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- PHP >= 7.4
+- Composer
+- Node.js & npm
+- MySQL or any other database supported by Laravel
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Steps
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/CyberDefX.git
+2. **Navigate to the project directory**:
+   ```bash
+   cd CyberDefX
+3. **Install PHP dependencies & Javascript dependencies**:
+   ```bash
+   composer install & npm install
+4. **Set up environment variables**:
+   ```bash
+     cp .env.example .env
+5. **Generate application key**:
+   ```bash
+   php artisan key:generate
+6. **Run database migration**:
+   ```bash
+   php artisan migrate
+7. **Optional Seed the database (if you have seeders configured)**:
+   ```bash
+   php artisan db:seed
+8. **Compile front-end assets**:
+   ```bash
+   npm run dev
+9. **Start the development server**:
+   ```bash
+   php artisan serve
+   
+11.Access the application:
+Open your web browser and go to http://localhost:8000
 
-## Laravel Sponsors
+## Features
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+1. **Client Management**:
+   - Set up profiles, post jobs, and hire freelancers based on job bids.
+   - Edit and manage job postings with ease.
+   - Monitor the status of hired freelancers.
+  ![CyberDefX Screenshot](https://github.com/Neo-Zone/CyberDefx/blob/main/client%20hire.png)
+  ![CyberDefX Screenshot](https://github.com/Neo-Zone/CyberDefx/blob/main/client%20hired%20jobs.png)
+  ![CyberDefX Screenshot](https://github.com/Neo-Zone/CyberDefx/blob/main/post%20the%20job.png)
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+
+2. **Freelancer Management**:
+   - Create profiles and search for jobs using filters.
+   - Place bids on available jobs.
+    ![CyberDefX Screenshot](https://github.com/Neo-Zone/CyberDefx/blob/main/bid.png)
+    ![CyberDefX Screenshot]( https://github.com/Neo-Zone/CyberDefx/blob/main/filter.png)
+
+3. **Reviews**:
+   - Both freelancers and clients can leave reviews upon job completion.
+   - Reviews are displayed on respective profiles.
+
+    ![CyberDefX Screenshot](https://github.com/Neo-Zone/CyberDefx/blob/main/review.png)
+    ![CyberDefX Screenshot]( https://github.com/Neo-Zone/CyberDefx/blob/main/profile%20and%20review.png)
+ 
+   
+4. **Communication**:
+   - Integrated chat options for freelancers and clients.
+     ![CyberDefX Screenshot](https://github.com/Neo-Zone/CyberDefx/blob/main/chat.png)
+
+5. **Payments**:
+   - Clients have a secure payment option for job completion.
+  
+     ![CyberDefX Screenshot](https://github.com/Neo-Zone/CyberDefx/blob/main/1stripe.png)
+
+## Usage
+
+1. **Register as a client or freelancer**:
+   - Sign up on the platform as either a client or a freelancer.
+
+2. **Set up your profile**:
+   - Fill in your profile details to start using the platform.
+
+3. **Clients can post jobs and hire freelancers**:
+   - Clients can create job postings and hire freelancers based on their bids.
+
+4. **Freelancers can bid on jobs and complete them**:
+   - Freelancers can browse job postings, place bids, and complete jobs.
+
+5. **Use the chat feature to communicate**:
+   - Both clients and freelancers can use the integrated chat feature to communicate.
+
+6. **Clients can securely pay freelancers after job completion**:
+   - Clients can make payments to freelancers upon job completion through the secure payment system.
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+We welcome contributions from the community! To contribute to CyberDefX, follow these steps:
 
-## Code of Conduct
+1. Fork the repository on GitHub.
+2. Create a new branch from the `main` branch:
+   ```bash
+   git checkout -b your-branch-name
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
