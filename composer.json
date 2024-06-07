@@ -1,0 +1,5 @@
+{
+    "require": {
+        "miaababikir/laravel-tailwind-dashboard-preset": "^0.6.0"
+    }
+}
